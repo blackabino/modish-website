@@ -32,3 +32,34 @@ const observer = new IntersectionObserver(entries => {
 
 fadeElements.forEach(el => observer.observe(el));
 
+/* BOOKING FORM */
+
+const bookingForm = document.getElementById('bookingForm');
+
+if(bookingForm){
+
+    bookingForm.addEventListener('submit', function(e){
+
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const service = document.getElementById('service').value;
+        const message = document.getElementById('message').value;
+
+        const whatsappMessage =
+`Hello Modish,%0A%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Service: ${service}%0A
+Details: ${message}`;
+
+        window.open(
+`https://wa.me/2349157220613?text=${whatsappMessage}`,
+'_blank'
+        );
+
+    });
+
+}
+
