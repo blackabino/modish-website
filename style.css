@@ -69,8 +69,8 @@ header{
 ========================= */
 
 .menu-toggle{
-    width:70px;
-    height:70px;
+    width:55px;
+    height:55px;
     border-radius:50%;
     background:#111;
     border:2px solid rgba(255,255,255,0.15);
@@ -162,11 +162,10 @@ header{
 }
 
 .hero-image img{
-    width:700px;
-    max-width:100%;
-    transform:translateY(40px);
+    width:100%;
+    max-width:450px;
+    transform:none;
 }
-
 /* =========================
    BUTTONS
 ========================= */
@@ -433,8 +432,8 @@ header{
     position:fixed;
     right:25px;
     bottom:25px;
-    width:70px;
-    height:70px;
+    width:60px;
+    height:60px;
     z-index:99999;
 }
 
@@ -461,9 +460,9 @@ footer{
 
 @media(max-width:991px){
 
-    header{
-        padding:20px;
-    }
+   header{
+    padding:10px 20px;
+}
 
     .logo img{
         width:170px;
@@ -475,9 +474,10 @@ footer{
         padding:160px 25px 80px;
     }
 
-    .hero-text h1{
-        font-size:64px;
-    }
+   .hero-text h1{
+    font-size:42px;
+    line-height:1;
+}
 
     .hero-buttons{
         justify-content:center;
@@ -489,7 +489,7 @@ footer{
     .about,
     .gallery,
     .membership{
-        padding:80px 25px;
+        padding:60px 20px;
     }
 
     .about{
@@ -640,7 +640,7 @@ footer{
 
 .testimonial-card{
     background:#111;
-    padding:40px;
+    padding:30px 25px;
     border-radius:20px;
     border:1px solid rgba(255,255,255,0.08);
     transition:0.3s ease;
